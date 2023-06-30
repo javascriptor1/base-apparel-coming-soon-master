@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href=" css/output.css" />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -25,17 +31,46 @@
       }
     </style>
   </head>
-  <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
+  <body class="grid min-h-screen  text-base">
+    <main class="grid lg:grid-cols-2 p-[1.875rem] min-w-[320px]">
+      <img src="images/logo.svg" alt="logo" class="mb-12" />
+      <div class="ml-[-32px] mr-[-32px]">
+        <img src="images/hero-mobile.jpg" alt="hero image" class="md:hidden w-full" />
+      </div>
+      <img
+        src="images/hero-desktop.jpg"
+        alt="hero image for"
+        class="hidden lg:block"
+      />
+      <h1 class="text-5xl text-center tracking-widest uppercase mt-14 text-DarkGrayishRed font-semibold">
+        <span class="text-DesaturatedRed font-light">We're</span> coming soon
+      </h1>
+      <p class="text-center text-DesaturatedRed mt-4 font-medium text-[14px] mb-12">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form action="">
+        <fieldset class="relative">
+          
+            <input type="email" placeholder="Email Address" class="border border-DesaturatedRed border-s rounded-full py-[10px] w-full indent-4 placeholder:text-DesaturatedRed placeholder:font-light outline-SoftRed" />
+            <div id="mobile-arrow-div" class="absolute right-0 top-0">
+              <div class="relative" id="direct-arrow-parent-div">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" class="" id="mobile-arrow"><path fill="none" stroke="#fff" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"
+                  /></svg>
+              </div>
+            </div>
+         
+        </fieldset>
+      </form>
+    </main>
 
     <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">MKF</a>
       </p>
     </footer>
 
