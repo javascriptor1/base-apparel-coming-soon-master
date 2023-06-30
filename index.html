@@ -31,53 +31,86 @@
       }
     </style>
   </head>
-  <body class="grid min-h-screen  text-base overflow-x-hidden">
-    <main class="grid p-[1.875rem] min-w-[320px] xl:pr-0 xl:pl-24">
+  <body class="grid min-h-screen text-base overflow-x-hidden">
+    <main class="grid p-[1.875rem] min-w-[320px] xl:pr-0 xl:pl-24 xl:pb-0">
       <img src="images/logo.svg" alt="logo" class="mb-12" />
       <div class="ml-[-32px] mr-[-32px]">
-        <img src="images/hero-mobile.jpg" alt="hero image" class="xl:hidden w-full" />
+        <img
+          src="images/hero-mobile.jpg"
+          alt="hero image"
+          class="xl:hidden w-full"
+        />
       </div>
-      <div class="col-start-2 col-end-3 row-start-1 row-end-6 xl:min-w-full xl:min-h-screen m-[-30px] relative">
+      <div
+        class="col-start-2 col-end-3 row-start-1 row-end-6 xl:min-w-full xl:min-h-screen m-[-30px] relative"
+      >
         <img
           src="images/hero-desktop.jpg"
           alt="hero image for"
-          class="hidden xl:block xl:w-full xl:min-h-screen
-          "
+          class="hidden xl:block xl:w-full xl:min-h-screen"
         />
       </div>
-      <h1 class="text-5xl text-center tracking-widest uppercase mt-14 text-DarkGrayishRed font-semibold
-        xl:row-start-2 xl:row-end-3 xl:text-left xl:text-[5rem] xl:mt-6
-      ">
-        <span class="text-DesaturatedRed font-light">We're <br></span> coming <br class="hidden xl:block">soon
+      <h1
+        class="text-5xl text-center tracking-widest uppercase mt-14 text-DarkGrayishRed font-semibold xl:row-start-2 xl:row-end-3 xl:text-left xl:text-[5rem] xl:mt-6"
+      >
+        <span class="text-DesaturatedRed font-light">We're <br /></span> coming
+        <br class="hidden xl:block" />soon
       </h1>
-      <p class="text-center text-DesaturatedRed mt-4 font-medium text-[14px] mb-12 xl:mb-0 xl:row-start-3 xl:row-end-4 md:w-[70%] xl:w-[70%] lg:text-left xl:mt-[-32px] xl:text-xl lx:mt-[-32px]">
+      <p
+        class="text-center text-DesaturatedRed mt-4 font-medium text-[14px] mb-12 xl:mb-0 xl:row-start-3 xl:row-end-4 md:w-[70%] xl:w-[70%] lg:text-left xl:mt-[-32px] xl:text-xl lx:mt-[-32px]"
+      >
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
-      <form action="" class="xl:row-end-5">
+      <form action="https://twitter.com" method="submit" class="xl:row-end-5" id="myForm" novalidate>
         <fieldset class="relative">
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="border border-DesaturatedRed border-s rounded-full py-[10px] w-full xl:w-[70%] indent-4 placeholder:text-DesaturatedRed placeholder:font-light outline-SoftRed"
+            id="email-input"
+             autocomplete="email"
+          />
+          <img src="images/icon-error.svg" alt="error message" class="hidden absolute top-[18%] right-[40%]" id="arrow-error">
+          <!-- ERROR MESSAGE -->
+          <div class=" indent-4 text-DesaturatedRed text-sm mt-4" id="response-message">
           
-            <input type="email" placeholder="Email Address" class="border border-DesaturatedRed border-s rounded-full py-[10px] w-full xl:w-[70%] indent-4 placeholder:text-DesaturatedRed placeholder:font-light outline-SoftRed" />
-            <div id="mobile-arrow-div" class="absolute right-0 top-0 cursor-pointer xl:right-[195px]">
-              <div class="relative " id="direct-arrow-parent-div">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" class="" id="mobile-arrow"><path fill="none" stroke="#fff" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"
-                  /></svg>
-              </div>
+          </div>
+          <button
+            id="mobile-arrow-div"
+            class="absolute right-0 top-0 cursor-pointer xl:right-[195px]"
+            type="submit"
+          >
+            <div class="relative" id="direct-arrow-parent-div">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="20"
+                id="mobile-arrow"
+              >
+                <path
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  d="M1 1l8.836 8.836L1 18.671"
+                />
+              </svg>
             </div>
-         
+          </button>
         </fieldset>
       </form>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">MKF</a>
+        </p>
+      </footer>
     </main>
-<!-- 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">MKF</a>
-      </p>
-    </footer> -->
+    
+   
 
     <script src="main.js"></script>
   </body>

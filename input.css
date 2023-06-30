@@ -14,12 +14,24 @@
     box-shadow: 0px 1px 14px 0px rgba(238,140,140,1);
 }
 
+#mobile-arrow-div:hover{
+    background: linear-gradient(135deg, rgba(248, 191, 191, 0.952), rgba(238, 194, 194, 0.952));
+    width: 80px;
+
+}
+
 #direct-arrow-parent-div{
     width: 60px;
     height: 46px;
 }
 
 #mobile-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#direct-arrow-parent-div:hover {
     position: absolute;
     top: 50%;
     left: 50%;

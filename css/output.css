@@ -538,6 +538,38 @@ video {
   top: 0px;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.right-\[50\%\] {
+  right: 50%;
+}
+
+.right-\[25\%\] {
+  right: 25%;
+}
+
+.top-\[75\%\] {
+  top: 75%;
+}
+
+.right-\[36\%\] {
+  right: 36%;
+}
+
+.right-\[40\%\] {
+  right: 40%;
+}
+
+.top-\[18\%\] {
+  top: 18%;
+}
+
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -654,6 +686,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -697,12 +734,24 @@ video {
   box-shadow: 0px 1px 14px 0px rgba(238,140,140,1);
 }
 
+#mobile-arrow-div:hover{
+  background: linear-gradient(135deg, rgba(248, 191, 191, 0.952), rgba(238, 194, 194, 0.952));
+  width: 80px;
+}
+
 #direct-arrow-parent-div{
   width: 60px;
   height: 46px;
 }
 
 #mobile-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#direct-arrow-parent-div:hover {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -818,6 +867,10 @@ video {
 
   .xl\:pr-0 {
     padding-right: 0px;
+  }
+
+  .xl\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .xl\:text-left {
