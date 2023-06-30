@@ -538,6 +538,26 @@ video {
   top: 0px;
 }
 
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-end-6 {
+  grid-row-end: 6;
+}
+
+.m-\[-30px\] {
+  margin: -30px;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -580,6 +600,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-full {
@@ -685,6 +709,18 @@ video {
   transform: translate(-50%,-50%);
 }
 
+@media (min-width:1280px){
+  main {
+    grid-template-columns: 54.5% 43.5%;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+  p {
+    margin:auto;
+  }
+}
+
 .placeholder\:font-light::-moz-placeholder {
   font-weight: 300;
 }
@@ -704,18 +740,96 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
+  .md\:w-\[70\%\] {
+    width: 70%;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .lg\:text-left {
+    text-align: left;
   }
 }
 
+@media (min-width: 1280px) {
+  .xl\:right-\[195px\] {
+    right: 195px;
+  }
+
+  .xl\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .xl\:row-start-3 {
+    grid-row-start: 3;
+  }
+
+  .xl\:row-end-3 {
+    grid-row-end: 3;
+  }
+
+  .xl\:row-end-4 {
+    grid-row-end: 4;
+  }
+
+  .xl\:row-end-5 {
+    grid-row-end: 5;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .xl\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .xl\:mt-\[-32px\] {
+    margin-top: -32px;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .xl\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:min-w-full {
+    min-width: 100%;
+  }
+
+  .xl\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .xl\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .xl\:text-left {
+    text-align: left;
+  }
+
+  .xl\:text-\[5rem\] {
+    font-size: 5rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
